@@ -4,9 +4,16 @@
 
 ## Запуск
 
+Собрать проект:
+
 ```bash
-./scripts/build.sh
-./scripts/run.sh
+mvn clean package
+```
+
+Запустить игру:
+
+```bash
+java -XstartOnFirstThread -jar target/traffic-car-2d.jar
 ```
 
 ## Управление
@@ -22,15 +29,12 @@
 - `F11` - полный экран
 - `Esc` - меню
 
-## Простая структура проекта
+## Структура проекта
 
 ```text
 Final-Design-Pattern/
 ├── README.md
 ├── pom.xml
-├── scripts/
-│   ├── build.sh
-│   └── run.sh
 └── src/
     └── main/
         ├── java/game/
@@ -39,11 +43,10 @@ Final-Design-Pattern/
 
 ## Где что находится
 
-- `src/main/java/game` - весь код игры в одной папке
+- `pom.xml` - настройки Maven и libGDX
+- `src/main/java/game` - весь Java-код игры
 - `src/main/resources/cars` - текстуры машин
 - `src/main/resources/forest_bg.jpg` - фон дороги
-- `scripts/build.sh` - сборка проекта
-- `scripts/run.sh` - запуск игры
 
 ## Основные файлы кода
 
@@ -72,7 +75,7 @@ person-2:
 - диалоги
 - collision fixes
 - level 10
-- финальная проверка README
+- финальная документация
 
 ## Сюжет
 
@@ -80,10 +83,3 @@ person-2:
 - уровни 2-4 и 6-8 являются обычной погоней
 - Ерасыл появляется только на нужных сюжетных уровнях
 - 10 уровень - финальная битва с HP Ерасыла и стрельбой
-
-## Проверка перед сдачей
-
-```bash
-./scripts/build.sh
-./scripts/run.sh
-```
