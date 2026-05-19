@@ -21,6 +21,8 @@ mvn clean package
 Запустить игру:
 
 ```bash
+cd ~/Desktop/Final-Design-Pattern
+mvn clean package
 java -XstartOnFirstThread -jar target/traffic-car-2d.jar
 ```
 
