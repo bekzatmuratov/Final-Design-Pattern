@@ -2,3 +2,5 @@ target/
 *.class
 traffic-car-2d-save.properties
 .DS_Store
+
+.idea/
